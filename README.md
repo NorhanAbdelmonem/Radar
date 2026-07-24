@@ -22,5 +22,5 @@ A simple Java OOP application that simulates a traffic radar system and generate
 3. Run `Main.java`.
 
 ## Sample Output
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b37c9198-ef56-4d9d-b7b4-cc21a3039982" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e2cd5ed6-1f3d-42c4-ae7d-6daf98a13ae3" />
 
