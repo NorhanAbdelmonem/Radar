@@ -42,14 +42,12 @@ public class Main {
         fines.add(radar.scan(observation2));
         //fines.add(radar.scan(observation3));
 
-
         for (Fine fine : fines) {
             fine.print();
             System.out.println();
         }
 
         System.out.println("All Fines:");
-
         for (Fine fine : fines) {
             System.out.println(fine.getPlateNumber()
                     + " : "
@@ -59,24 +57,18 @@ public class Main {
 
         Map<String, Integer> count = new HashMap<>();
 
+        int speedCount = 0;
+        int seatbeltCount = 0;
         for (Fine fine : fines) {
-
             for (Violation violation : fine.getViolations()) {
-
-                String message = violation.getMessage();
-
-                if (count.containsKey(message)) {
-                    count.put(message, count.get(message) + 1);
-                } else {
-                    count.put(message, 1);
+                if (violation.getMessage().startsWith("speed")) {
+                    speedCount++;
                 }
-            }
+                if (violation.getMessage().equals("Seatbelt not fastened")) {
+                    seatbeltCount++;
+                }}
         }
-
         System.out.println("\nViolated Rules:");
-
-        for (String rule : count.keySet()) {
-            System.out.println(rule + " : " + count.get(rule));
-        }
-    }
-}
+        System.out.println("Speed Rule : " + speedCount);
+        System.out.println("Seatbelt Rule : " + seatbeltCount);
+}}
