@@ -9,7 +9,7 @@ A simple Java OOP application that simulates a traffic radar system and generate
 - Generate a traffic fine report.
 - Easily extend the system by adding new traffic rules.
 
-- 
+  
 ## Technologies
 
 - Java
