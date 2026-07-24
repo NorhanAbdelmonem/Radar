@@ -16,6 +16,12 @@ public class Fine {
     public void addViolation(Violation violation) {
         violations.add(violation);
     }
+    public String getPlateNumber() {
+        return plateNumber;
+    }
+    public List<Violation> getViolations() {
+        return violations;
+    }
 
     public int getTotalAmount() {
 
